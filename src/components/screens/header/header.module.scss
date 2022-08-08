@@ -1,0 +1,62 @@
+.header {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		img {
+			max-width: 170px;
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+	}
+	&__icons {
+		display: flex;
+		justify-content: center;
+		gap: 57px;
+	}
+	&__ava {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+	}
+}
+@media screen and (max-width: 1440px) {
+	.header {
+		&__logo {
+			img {
+				max-width: 140px;
+			}
+		}
+		&__icons {
+			gap: 30px;
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.header__menu {
+		gap: 20px;
+	}
+	.header__icons {
+		svg {
+			width: 25px;
+		}
+	}
+}

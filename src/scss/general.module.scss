@@ -1,0 +1,187 @@
+// общие стили
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+body {
+	font-family: 'PP Telegraf';
+	background: #F6F6F6;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+	
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: #282828;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.content {
+	padding-top: 161px;
+	padding-bottom: 154px;
+	&__body {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		gap: 69px;
+	}
+}
+.box {
+	background: #FFFFFF;
+	border-radius: 34px;
+	width: calc(1090px * 100% / 1680px);
+	padding: 80px 88px 56px;
+	&__head {
+		margin-bottom: 121px;
+		&_txt {
+			h3 {
+				font-family: 'PP Telegraf';
+				font-style: normal;
+				font-weight: 800;
+				font-size: 28px;
+				line-height: 120%;
+				margin-bottom: 10px;
+				color: $black;
+			}
+			p {
+				font-family: 'Onest';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 120%;
+				color: $black-default;
+			}
+		}
+	}
+}
+.default_link {
+	font-family: 'Onest';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration-line: underline;
+	font-feature-settings: 'salt' on;
+	color: #4A6EED;
+	&:hover {
+		text-decoration: none;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.container {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.content {
+		padding-top: 120px;
+	}
+	.box {
+		width: 100%;
+		padding: 40px;
+		&__head {
+			margin-bottom: 50px;
+			&_txt {
+				h3 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.content__body {
+		gap: 30px;
+	}
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.box__head {
+		&_txt {
+			h3 {
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.default_link {
+		font-size: 14px;
+	}
+}

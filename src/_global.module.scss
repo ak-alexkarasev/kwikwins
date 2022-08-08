@@ -1,0 +1,23 @@
+// для переменных
+
+%ret {
+    padding: 10px;
+    background: red;
+}
+$black:#212121;
+$black-default: #000;
+
+$ButtonHoverColor: #6180ef;
+
+$borderRadius: 20px;
+$layerWidth: 688px;
+
+//Цвет границы элементов
+$borderColor: #c9cee3;
+//Цвет границы активного элемента
+$borderActiveColor: #202020;
+//Фон кнопки при наведении
+$bgHoverButton: #6180ef;
+//Фон фокусной кнопки
+$bgFocusButton: #4a6eed;
+$placeholderText: #acb4bf;

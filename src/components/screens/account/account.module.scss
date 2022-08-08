@@ -1,0 +1,78 @@
+.account__head {
+	margin-bottom: 80px;
+}
+.account__wrap_btns{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 80px;
+	gap: 174px;
+}
+
+.account__tabs_pane {
+	display: none;
+	&_show {
+		display: block;
+	}
+}
+
+.account {
+	&__tabs {
+		&_menu {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 40px;
+			gap: 56px;
+		}
+		&_link {
+			font-family: 'PP Telegraf';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 22px;
+			line-height: 120%;
+			color: #ACB4BF;
+			transition: .3s all;
+			padding: 0 6px 6px 2px;
+			cursor: pointer;
+			position: relative;
+			&:after {
+				content: none;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 4px;
+				background: #4A6EED;
+			}
+			&_active, &:hover {
+				color: #4A6EED;
+			}			
+			&_active {
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1440px) {
+	.account__head {
+		margin-bottom: 30px;
+	}
+	.account__wrap_btns {
+		gap: 50px;
+	}
+	.account__tabs_link {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.account__wrap_btns {
+		margin-top: 40px;
+		gap:20px;
+	}
+	.account__tabs_menu{
+		gap: 20px;
+	}
+}
