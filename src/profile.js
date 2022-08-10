@@ -1,11 +1,9 @@
 import cn from 'classnames';
 import styles from './scss/main.module.scss';
-import './js/script.module.js';
+import avatar from './img/header/demo.png';
 import logo from './img/header/logo.svg';
 import ava from './img/header/ava.png';
-import avatar from './img/header/demo.png';
 import { Input } from 'antd';
-import { Button } from 'antd';
 function Profile() {
     return (
 			<section  className={styles.wrapper}>
@@ -36,7 +34,7 @@ function Profile() {
 							</div>
 						</div>
 					</div>
-				</header>
+				</header>				
 				
 				<section className={styles.content}>
 					<div className={styles.container}>

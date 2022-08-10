@@ -21,3 +21,41 @@ $bgHoverButton: #6180ef;
 //Фон фокусной кнопки
 $bgFocusButton: #4a6eed;
 $placeholderText: #acb4bf;
+
+%btn_blue {
+	display: inline-block;
+	padding: 23.5px 40px;
+	background: #4A6EED;
+	border-radius: 24px;
+	font-family: 'PP Telegraf';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	filter: drop-shadow(0px 0px 10px rgba(0, 96, 242, 0.08)) drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.08));
+	&:hover {
+		background-color: #6180ef;
+		color: #fff;
+		&:disabled,
+		[disabled] {
+			color: #fff;
+			background-color: #c9cee3;
+		}
+	}
+	&:not(:hover) {
+		color: #fff;
+		background-color: #4a6eed;
+	}
+	&:disabled,
+	[disabled] {
+		color: #fff;
+		background-color: #c9cee3;
+	}
+}
+@media screen and (max-width: 1024px) {
+	%btn_blue {
+		font-size: 16px;
+	}
+}
