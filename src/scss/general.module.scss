@@ -167,6 +167,15 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 120%;
 		color: #212121;
 	}
+	&__desk {
+		font-family: 'Onest';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 145%;
+		text-align: center;
+		color: #000000;
+	}
 }
 @media screen and (max-width: 1600px) {
 	.container {
@@ -228,5 +237,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.title {
 		h2 {font-size: 24px;}
+		&__desk {
+			font-size: 16px;
+		}
 	}
 }
