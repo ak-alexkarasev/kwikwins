@@ -8,6 +8,7 @@ import App from "./App";
 import Expenses from "./profile";
 import Account from "./account";
 import WorkspaceProducts from "./workspaceProducts";
+import WorkspaceSubs from "./workspaceSubs";
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
@@ -18,6 +19,7 @@ root.render(
       <Route path="/profile" element={<Expenses />} />
 			<Route path="/account" element={<Account />} />
 			<Route path="/workspaceProducts" element={<WorkspaceProducts />} />
+			<Route path="/workspaceSubs" element={<WorkspaceSubs />} />
     </Routes>
   </BrowserRouter>
 )

@@ -142,7 +142,30 @@ h1, h2, h3, h4, h5, h6 {
 		text-decoration: none;
 	}
 }
-
+.breadcrumbs {
+	text-align: left;
+	margin-bottom: 64px;
+	&__prev {
+		font-family: 'Onest';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 120%;
+		text-decoration-line: underline;
+		color: #4A6EED;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.title {
+	font-family: 'PP Telegraf';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 120%;
+	color: #212121;
+}
 @media screen and (max-width: 1600px) {
 	.container {
 		padding-left: 60px;
