@@ -54,7 +54,12 @@ $placeholderText: #acb4bf;
 		background-color: #c9cee3;
 	}
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
+	%btn_blue {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1440px) {
 	%btn_blue {
 		font-size: 16px;
 	}

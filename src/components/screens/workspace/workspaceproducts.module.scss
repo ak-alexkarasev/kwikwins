@@ -84,6 +84,7 @@
 @media screen and (max-width: 1440px) {
 	.workspace__item {
 		width: 200px;
+		height: 270px;
 		&_number {
 			font-size: 50px;
 			margin-bottom: 5px;
@@ -188,6 +189,8 @@
 	height: 20px;
 	overflow: hidden;
 	width: 100%;
+	// text-overflow: ellipsis;
+	// white-space: nowrap;
 }
 .inbox__message_number {
 	background: #747786;
@@ -220,13 +223,14 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-bottom: 44px;
 			gap: 15px;
 		}
 		&_menu {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			margin-bottom: 44px;
+			
 			gap: 51px;
 		}
 		&_link {
@@ -261,7 +265,7 @@
 	}
 }
 .workspace__tab {
-	display: block;
+	display: none;
 	&_show {
 		display: flex;
 		flex-direction: column;
@@ -342,8 +346,26 @@
 	}
 }
 @media screen and (max-width: 1440px) {
+	.workspace__title {
+		font-size: 26px;
+	}
 	.workspace__tabs_link {
 		font-size: 18px;
+	}
+	.workspace__die {
+		padding: 30px;
+		&_title {
+			h3 {
+				font-size: 22px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1199px) {
+	.workspace__die {
+		&_user {
+			width: 220px;
+		}
 	}
 }
 @media screen and (max-width: 1024px) {
