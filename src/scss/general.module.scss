@@ -159,12 +159,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 .title {
-	font-family: 'PP Telegraf';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 32px;
-	line-height: 120%;
-	color: #212121;
+	h2 {
+		font-family: 'PP Telegraf';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 120%;
+		color: #212121;
+	}
 }
 @media screen and (max-width: 1600px) {
 	.container {
@@ -196,6 +198,15 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
+	.title {
+		h2 {font-size: 26px;}
+	}
+	.breadcrumbs {
+		margin-bottom: 30px;
+	}
+	.breadcrumbs__prev {
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 1024px) {
 	.content__body {
@@ -214,5 +225,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.default_link {
 		font-size: 14px;
+	}
+	.title {
+		h2 {font-size: 24px;}
 	}
 }
